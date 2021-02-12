@@ -11,3 +11,8 @@
     margin-left: 1in;
     margin-right: 1in;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
