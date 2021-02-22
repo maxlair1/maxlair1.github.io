@@ -10,13 +10,15 @@
     margin-bottom: .25in;
     margin-left: .25in;
     margin-right: .25in;
+    float: left;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: right;
-    display: inline
+    display: inline;
+    float:right;
   }
 .int_text {
     font-family: effra, sans-serif;
