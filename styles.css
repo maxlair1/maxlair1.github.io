@@ -18,14 +18,10 @@ ul {
     text-align: right;
     display: inline
   }
-h1 {
+.int_text {
     font-family: effra, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: rgb(255, 255, 255);
     margin-right: .25in
-    
-}
-.yellow_let {
-    color: yellow;
 }
