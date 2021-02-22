@@ -22,7 +22,9 @@ ul {
     font-family: effra, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 60px
-    color rgb(255, 255, 255);
+    font-size: 60px;
+    color: white;
+}
+h1 {
     margin-left: .50in
 }
