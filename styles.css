@@ -16,10 +16,15 @@ ul {
     margin: 0;
     padding: 0;
     text-align: right;
+    display: inline
   }
 .int_text {
     font-family: effra, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: rgb(255, 255, 255);
+    margin-right: 15px
+}
+.yellow_let {
+    color: yellow;
 }
