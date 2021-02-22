@@ -4,15 +4,15 @@
 .logo_alone {
     max-height: 200px;
     max-width: 200px;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     margin-top: .25in;
-    margin-bottom: .25in;
+    margin-bottom: 1in;
     margin-left: .25in;
     margin-right: .25in;
-    
 }
 ul {
+    block-size: 100px;
     list-style-type: none;
     margin: 0;
     padding: 0;
