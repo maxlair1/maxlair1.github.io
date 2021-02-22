@@ -1,16 +1,20 @@
 * {
     background-color: #222222;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .logo_alone {
     max-height: 200px;
     max-width: 200px;
     width: 75px;
     height: 75px;
     margin-top: .25in;
-    margin-bottom: 1in;
+    margin-bottom: .50in;
     padding-bottom: 1in;
     margin-left: .25in;
     margin-right: .25in;
+    display:inline;
 }
 ul {
     block-size: 100px;
@@ -20,6 +24,9 @@ ul {
     text-align: right;
     display: inline;
     float: right;
+    font-family: Arial;
+    
+
     
   }
 .int_text {
