@@ -18,7 +18,7 @@ ul {
     text-align: right;
     display: inline
   }
-.int_text {
+h1 {
     font-family: effra, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -26,6 +26,6 @@ ul {
     margin-right: 15px
     
 }
-.int_text .yellow_let {
+.yellow_let {
     color: yellow;
 }
