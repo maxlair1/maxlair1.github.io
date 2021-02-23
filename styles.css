@@ -14,8 +14,8 @@ html {
     padding-bottom: 1in;
     margin-left: .25in;
     margin-right: .25in;
-    display:inline;
-    position: left;
+    display:inline-block;
+    position:left;
 }
 ul li {
     block-size: 100px;
@@ -34,6 +34,7 @@ ul li {
     font-style: normal;
     font-size: 60px;
     color: white;
+    display:inline;
 }
 h1 {
     margin-left: .50in
