@@ -16,13 +16,13 @@ html {
     margin-right: .25in;
     display:inline;
 }
-ul {
+ul li {
     block-size: 100px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: right;
-    display: inline;
+    display: inline-block;
     float: right;
     font-family: Arial;
     
