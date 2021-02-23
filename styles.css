@@ -19,15 +19,13 @@ html {
 ul li {
     block-size: 100px;
     list-style-type: none;
-    margin: 0;
+    margin: auto;
+    position:right;
     padding: 0;
     text-align: right;
     display: inline-block;
     align-content: right;
     font-family: Arial;
-    
-
-    
   }
 .int_text {
     font-family: Arial;
