@@ -30,6 +30,8 @@ ul {
   display:flex;
   flex-direction: row; 
   flex-wrap: wrap;
+  color:white;
+  font-size: 20px
 }
 h1 {
   font-family: Arial;
