@@ -40,7 +40,9 @@ h1 {
     font-style: bold;
     font-size: 60px;
     color: white;
-    margin-left: .50in
+    margin-left: .50in;
+    display:flex;
+    justify-content: flex-start;
 }
 .arrow_1 {
     margin-left: .50in
