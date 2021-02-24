@@ -32,6 +32,7 @@ nav ul li {
     padding: 0;
     font-family: Arial;
     display:flex;
+    flex-grow: 1;
   }
 h1 {
     font-family: Arial;
