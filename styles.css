@@ -6,7 +6,11 @@ html {
   }
 nav {
   display:flexbox;
-  justify-content:space-between
+  justify-content:space-between;
+  margin-left: .50in;
+  margin-right: .50in;
+  margin-bottom: .50in;
+
 }
 .logo_alone {
     max-height: 200px;
@@ -31,11 +35,10 @@ ul li {
   }
 h1 {
     font-family: Arial;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 600;
+    font-style: bold;
     font-size: 60px;
     color: white;
-    display:inline;
     margin-left: .50in
 }
 .arrow_1 {
