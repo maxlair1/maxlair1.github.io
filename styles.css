@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
   }
 nav {
-  display:flexbox;
+  display: flex;
   justify-content:space-between;
   margin-left: .50in;
   margin-right: .50in;
