@@ -34,7 +34,8 @@ ul {
   font-size: 20px
 }
 li {
-  padding: 20px
+  display:inline;
+  padding: 10px 20px
 }
 h1 {
   font-family: Arial;
