@@ -32,12 +32,12 @@ ul {
   flex-wrap: wrap;
   color:white;
   font-size: 20px;
-  
+  text-decoration: none;
+  align-content: right;
 }
 li {
   display:inline;
   padding: 10px 20px;
-  text-decoration: none;
 }
 h1 {
   font-family: Arial;
