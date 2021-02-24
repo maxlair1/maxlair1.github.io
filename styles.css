@@ -22,6 +22,7 @@ nav {
   position:left;
 }
 ul {
+  list-style-type: none;
   margin: auto;
   position: right;
   padding: 0;
