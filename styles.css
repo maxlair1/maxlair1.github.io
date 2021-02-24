@@ -4,6 +4,10 @@
 html {
     scroll-behavior: smooth;
   }
+nav {
+  display:flexbox;
+  justify-content:space-between
+}
 .logo_alone {
     max-height: 200px;
     max-width: 200px;
@@ -28,15 +32,16 @@ ul li {
     align-content: right;
     font-family: Arial;
   }
-.int_text {
+h1 {
     font-family: Arial;
     font-weight: 700;
     font-style: normal;
     font-size: 60px;
     color: white;
     display:inline;
+    margin-left: .50in
 }
-h1 {
+.arrow_1 {
     margin-left: .50in
 }
 .high_int {
