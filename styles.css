@@ -10,7 +10,7 @@ nav {
   margin-top: .50in;
   margin-left: .50in;
   margin-right: .50in;
-  margin-bottom: .50in;
+  margin-bottom: 1.25in;
   background-color: burlywood !important;
 }
 .logo_alone {
@@ -31,7 +31,8 @@ ul {
   flex-direction: row; 
   flex-wrap: wrap;
   color:white;
-  font-size: 20px
+  font-size: 20px;
+  
 }
 li {
   display:inline;
