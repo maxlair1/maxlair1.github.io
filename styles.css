@@ -11,37 +11,36 @@ nav {
   margin-right: .50in;
   margin-bottom: .50in;
   background-color: burlywood !important;
-
 }
-nav .logo_alone {
-    max-height: 200px;
-    max-width: 200px;
-    width: 75px;
-    height: 75px;
-    display:inline-block;
-    position:left;
+.logo_alone {
+  max-height: 200px;
+  max-width: 200px;
+  width: 75px;
+  height: 75px;
+  display:inline-block;
+  position:left;
 }
-nav ul li {
-    list-style-type: none;
-    margin: auto;
-    position: right;
-    padding: 0;
-    font-family: Arial;
-    display:flex;
-    float: right;
-    flex-grow: 1;
-  }
+ul {
+  list-style-type: none;
+  margin: auto;
+  position: right;
+  padding: 0;
+  font-family: Arial;
+  display:flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+}
 h1 {
-    font-family: Arial;
-    font-weight: 600;
-    font-style: bold;
-    font-size: 60px;
-    color: white;
-    margin-left: .50in;
-    justify-content: left;
+  font-family: Arial;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 60px;
+  color: white;
+  margin-left: .50in;
+  justify-content: left;
 }
 .arrow_1 {
-    margin-left: .50in
+  margin-left: .50in
 }
 .high_int {
   color:yellow  
