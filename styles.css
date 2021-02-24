@@ -10,7 +10,7 @@ nav {
   margin-left: .50in;
   margin-right: .50in;
   margin-bottom: .50in;
-  background-color: burlywood;
+  background-color: burlywood !important;
 
 }
 nav .logo_alone {
