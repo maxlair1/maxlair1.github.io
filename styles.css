@@ -26,7 +26,6 @@ nav .logo_alone {
     position:left;
 }
 nav ul li {
-    block-size: 100px;
     list-style-type: none;
     margin: auto;
     position: right;
