@@ -12,7 +12,7 @@ nav {
   margin-bottom: .50in;
 
 }
-.logo_alone {
+nav .logo_alone {
     max-height: 200px;
     max-width: 200px;
     width: 75px;
@@ -25,7 +25,7 @@ nav {
     display:inline-block;
     position:left;
 }
-ul li {
+nav ul li {
     block-size: 100px;
     list-style-type: none;
     margin: auto;
