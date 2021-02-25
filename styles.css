@@ -42,7 +42,7 @@ nav a:hover {
   color: rgb(173, 0, 165);
   /* text-decoration-line:underline; */
   /* text-decoration-color:rgb(161, 0, 161); */
-  transition: 0.3s
+  transition: 0.3s;
   /* background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(155, 0, 202)); */
   
 }
@@ -59,14 +59,48 @@ h1 {
   justify-content: left;
 }
 .arrow_1 {
-  margin-left: .50in
+  margin-left: .50in;
+  margin-bottom: .50in;
 }
 em {
   color:yellow;
   font-style: normal;
 }
-.project_1 {
-  background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(155, 0, 202));
+.projects {
+  display:flex;
+  margin-top: .30in;
   margin-left: .50in;
+  margin-right: .50in;
+  margin-bottom: .25in
+}
+.project_1 {
+  background-image: linear-gradient(to bottom right, rgb(60, 210, 255), rgb(0, 51, 146));;
   border-radius: 10px;
+  margin-right: .25in;
+  padding: 15px;
+  box-shadow: 5px 10px 11px #1b1b1b ;
+}
+.project_2 {
+  background-image: linear-gradient(to bottom right, rgb(253, 11, 253), rgb(112, 0, 146));;
+  border-radius: 10px;
+  margin-left: .25in;
+  padding: 15px;
+  box-shadow: 5px 10px 11px #1b1b1b ;
+}
+h4 {
+  background-color:transparent;
+  font-family: arial;
+  font-style: bold;
+  font-size: 35px;
+  color: #ffffff;
+  margin-top:10;
+
+}
+p {
+  background-color:transparent;
+  font-family: Arial;
+  font-style: normal;
+  font-size: 15px;
+  color: #ffffff;
+
 }
