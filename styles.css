@@ -30,7 +30,7 @@ ul {
   display: flex;
   flex-flow: row wrap;
   /* color:white !important; */
-  font-size: 20px;
+  font-size: 22px;
   text-decoration-line: none;
   /* align-content: flex-end !important; */
 }
@@ -39,7 +39,12 @@ nav a {
   color: white;
 }
 nav a:hover {
-  color: green;
+  color: rgb(173, 0, 165);
+  /* text-decoration-line:underline; */
+  /* text-decoration-color:rgb(161, 0, 161); */
+  transition: 0.3s
+  /* background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(155, 0, 202)); */
+  
 }
 li {
   padding: 10px 20px;
@@ -59,4 +64,9 @@ h1 {
 em {
   color:yellow;
   font-style: normal;
+}
+.project_1 {
+  background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(155, 0, 202));
+  margin-left: .50in;
+  border-radius: 10px;
 }
