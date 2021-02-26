@@ -93,14 +93,16 @@ h4 {
   font-style: bold;
   font-size: 35px;
   color: #ffffff;
-  margin-top:10;
+  margin-top: 10;
+  margin-bottom: 5px;
 
 }
 p {
   background-color:transparent;
-  font-family: Arial;
+  font-family: Georgia;
   font-style: normal;
   font-size: 15px;
   color: #ffffff;
+  margin-bottom: 50px;
 
 }
