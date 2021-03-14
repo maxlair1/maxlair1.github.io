@@ -65,7 +65,6 @@ h1 {
   position:relative;
   background:transparent;
   background-attachment:fixed;
-  background-position:center;
 }
 em {
   color:yellow;
@@ -76,6 +75,7 @@ em {
   /* background-image:url("images/background_home_gif.gif"); */
   background-image:url("images/blob_1.svg");
   background-repeat:no-repeat;
+  background-attachment:scroll;
   background-position-x: 700px;
   background-position-y: 0px;
 }
@@ -88,6 +88,7 @@ em {
   position:relative;
   background-image:url("images/blob_2.svg");
   background-repeat: no-repeat;
+  background-attachment: scroll;
   background-position-x: 1025px;
   background-position-y: 200px;
   background-size: 150px;
