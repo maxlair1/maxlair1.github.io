@@ -44,7 +44,6 @@ nav a:hover {
   /* text-decoration-color:rgb(161, 0, 161); */
   transition: 0.3s;
   /* background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(155, 0, 202)); */
-  
 }
 li {
   padding: 10px 20px;
@@ -61,17 +60,46 @@ h1 {
 .arrow_1 {
   margin-left: .50in;
   margin-bottom: .50in;
+  position:relative;
 }
 em {
   color:yellow;
   font-style: normal;
+}
+.cover {
+  /* background-image:url("images/background_home_gif.gif"); */
+}
+#about_me {
+  display:flex;
+  margin-top: .60in;
+  margin-left: .50in;
+  margin-right: .50in;
+  margin-bottom: .25in;
+  position:relative;
+  background-image:url("background_home_gif.gif");
+  
+}
+h3 {
+  color:rgb(204, 50, 183);
+  margin-top: 0;
+  margin-bottom:0;
+  font-size: 30px;
+  font-family: arial;
+}
+.portrait_icon {
+  width: 260px;
+  height: 260px;
+  margin-top: .55in;
+  margin-left: .50in;
+  font-style:italic bold;
 }
 .projects {
   display:flex;
   margin-top: .30in;
   margin-left: .50in;
   margin-right: .50in;
-  margin-bottom: .25in
+  margin-bottom: .25in;
+  position:relative;
 }
 .project_1 {
   background-image: linear-gradient(to bottom right, rgb(60, 210, 255), rgb(0, 51, 146));;
@@ -95,14 +123,37 @@ h4 {
   color: #ffffff;
   margin-top: 10;
   margin-bottom: 5px;
-
 }
 p {
   background-color:transparent;
-  font-family: Georgia;
+  font-family: arial;
   font-style: normal;
-  font-size: 15px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 50px;
-
+}
+.footer_icons {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+#instagram_icon {
+  height: 30px;
+  width: 30px;
+  margin: 25px;
+}
+#pinterest_icon {
+  height: 30px;
+  width: 30px;
+  margin: 25px;
+}
+#behance_icon {
+  height: 30px;
+  width: 30px;
+  margin: 25px;
+}
+#linkedin_icon {
+  height: 30px;
+  width: px;
+  margin: 25px;
 }
