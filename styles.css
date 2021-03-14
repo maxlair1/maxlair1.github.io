@@ -1,8 +1,9 @@
 * {
-    background-color: #222222;
+    /* background-color: #222222; */
 }
 html {
     scroll-behavior: smooth;
+    background-color: #222222;
   }
 nav {
   display: flex;
@@ -62,13 +63,21 @@ h1 {
   margin-left: .50in;
   margin-bottom: .50in;
   position:relative;
+  background:transparent;
+  background-attachment:fixed;
+  background-position:center;
 }
 em {
   color:yellow;
   font-style: normal;
+  background:transparent;
 }
 .cover {
-  background-image:url("images/background_home_gif.gif");
+  /* background-image:url("images/background_home_gif.gif"); */
+  background-image:url("images/blob_1.svg");
+  background-repeat:no-repeat;
+  background-position-x: 700px;
+  background-position-y: 0px;
 }
 #about_me {
   display:flex;
@@ -77,8 +86,11 @@ em {
   margin-right: .50in;
   margin-bottom: .25in;
   position:relative;
-  background-image:url("background_home_gif.gif");
-  
+  background-image:url("images/blob_2.svg");
+  background-repeat: no-repeat;
+  background-position-x: 1025px;
+  background-position-y: 200px;
+  background-size: 150px;
 }
 h3 {
   color:rgb(204, 50, 183);
@@ -86,6 +98,7 @@ h3 {
   margin-bottom:0;
   font-size: 30px;
   font-family: arial;
+  background:transparent;
 }
 .portrait_icon {
   width: 260px;
@@ -93,6 +106,7 @@ h3 {
   margin-top: .55in;
   margin-left: .50in;
   font-style:italic bold;
+  background:transparent;
 }
 .projects {
   display:flex;
@@ -132,6 +146,7 @@ p {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 50px;
+  background: transparent !important;
 }
 .footer_icons {
   display:flex;
