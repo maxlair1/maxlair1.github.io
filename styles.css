@@ -10,8 +10,6 @@ nav {
   margin-top: .50in;
   margin-left: .50in;
   margin-right: .50in;
-  margin-bottom: 2.25in;
-  
 }
 .logo_alone {
   max-height: 200px;
@@ -55,7 +53,10 @@ h1 {
   font-size: 60px;
   color: white;
   margin-left: .50in;
+  padding-top:2.25in;
   justify-content: left;
+  align-items: center;
+  background: transparent;
 }
 .arrow_1 {
   margin-left: .50in;
@@ -67,7 +68,7 @@ em {
   font-style: normal;
 }
 .cover {
-  /* background-image:url("images/background_home_gif.gif"); */
+  background-image:url("images/background_home_gif.gif");
 }
 #about_me {
   display:flex;
