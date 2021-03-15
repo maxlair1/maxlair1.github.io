@@ -5,12 +5,9 @@ html {
   scroll-behavior: smooth;
   background-color: #222222;
 }
-/* .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-} */
+body {
+  margin:0;
+}
 nav {
   display: flex;
   justify-content:space-between;
@@ -79,13 +76,25 @@ h1 {
   transition: all .5s ease-out;
   animation: .5s 
 }
+.arrow_2 {
+  position:absolute;
+  padding-right: .50in;
+  padding-bottom: .50in;
+  padding-left:.50in;
+  background:transparent;
+  transition:.5s;
+}
+.arrow_2:hover {
+  margin-top:.15in;
+  transition: all .5s ease-out;
+  animation: .5s;
+}
 em {
   color:yellow;
   font-style: normal;
   background:transparent;
 }
 .cover {
-  /* background-image:url("images/background_home_gif.gif"); */
   height:600px;
   background-image:url("images/blob_1.svg");
   background-repeat:no-repeat;
@@ -93,13 +102,19 @@ em {
   background-position-x: 700px;
   background-position-y: 0px;
   margin-bottom: 200px; 
+
+  /* background-image:url("images/blob_bg.svg");
+  background-repeat:no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  margin-bottom: 200px;  */
 }
 #about_me {
   display:flex;
   margin-top: .60in;
   margin-left: .50in;
   margin-right: .50in;
-  margin-bottom: .25in;
+  margin-bottom: 0in;
   position:relative;
   /* background-image:url("images/blob_2.svg"); */
   background-repeat: no-repeat;
@@ -110,7 +125,7 @@ em {
 }
 h3 {
   color:rgb(204, 50, 183);
-  margin-top: 0;
+  margin-top: 1in;
   margin-bottom:0;
   font-size: 30px;
   font-family: arial;
@@ -119,14 +134,17 @@ h3 {
 .portrait_icon {
   width: 260px;
   height: 260px;
-  margin-top: .55in;
+  margin-top: 1.55in;
   margin-left: .50in;
   font-style:italic bold;
   background:transparent;
 }
+#section_2 {
+  margin-bottom:2in;
+}
 .projects {
-  display:flex;
-  margin-top: .30in;
+  display:flex; 
+  margin-top: 1in;
   margin-left: .50in;
   margin-right: .50in;
   margin-bottom: .25in;
