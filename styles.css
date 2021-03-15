@@ -1,10 +1,16 @@
-* {
-    /* background-color: #222222; */
-}
-html {
-    scroll-behavior: smooth;
+/* * {
     background-color: #222222;
-  }
+} */
+html {
+  scroll-behavior: smooth;
+  background-color: #222222;
+}
+/* .preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+} */
 nav {
   display: flex;
   justify-content:space-between;
@@ -36,6 +42,7 @@ ul {
 nav a {
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 nav a:hover {
   color: rgb(173, 0, 165);
@@ -60,11 +67,17 @@ h1 {
   background: transparent;
 }
 .arrow_1 {
-  margin-left: .50in;
-  margin-bottom: .50in;
-  position:relative;
+  padding-left: .50in;
+  padding-bottom: .50in;
+  position:absolute;
   background:transparent;
-  background-attachment:fixed;
+  transition:.5s;
+}
+.arrow_1:hover {
+  position:absolute;
+  margin-top: .15in;
+  transition: all .5s ease-out;
+  animation: .5s 
 }
 em {
   color:yellow;
@@ -73,11 +86,13 @@ em {
 }
 .cover {
   /* background-image:url("images/background_home_gif.gif"); */
+  height:600px;
   background-image:url("images/blob_1.svg");
   background-repeat:no-repeat;
   background-attachment:scroll;
   background-position-x: 700px;
   background-position-y: 0px;
+  margin-bottom: 200px; 
 }
 #about_me {
   display:flex;
@@ -86,9 +101,9 @@ em {
   margin-right: .50in;
   margin-bottom: .25in;
   position:relative;
-  background-image:url("images/blob_2.svg");
+  /* background-image:url("images/blob_2.svg"); */
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment:unset;
   background-position-x: 1025px;
   background-position-y: 200px;
   background-size: 150px;
@@ -147,7 +162,7 @@ p {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 50px;
-  background: transparent !important;
+  background: transparent;
 }
 .footer_icons {
   display:flex;
