@@ -1,9 +1,6 @@
-/* * {
-    background-color: #222222;
-} */
 html {
   scroll-behavior: smooth;
-  background-color: #222222;
+  /* background-color: #222222; */
 }
 body {
   margin:0;
@@ -16,107 +13,75 @@ nav {
   margin-right: .50in;
 }
 .logo_alone {
-  max-height: 200px;
-  max-width: 200px;
-  width: 75px;
-  height: 75px;
+  max-height: 300px;
+  max-width: 300px;
+  width: 100px;
+  height: 100px;
   display:inline-block;
   position:left;
 }
 ul {
   list-style-type: none;
-  /* margin: auto; */
-  /* position: right; */
   padding: 0;
-  font-family: Arial;
+  font-family: 'Roboto mono', sans-serif;
   display: flex;
   flex-flow: row wrap;
-  /* color:white !important; */
-  font-size: 22px;
+  font-size: 18px;
   text-decoration-line: none;
-  /* align-content: flex-end !important; */
+  margin-top:.30in
+}
+ul :hover {
+  background-color: #222222;
 }
 nav a {
   text-decoration: none;
-  color: white;
+  color: #222222;
   transition: 0.3s;
 }
 nav a:hover {
-  color: rgb(173, 0, 165);
-  /* text-decoration-line:underline; */
-  /* text-decoration-color:rgb(161, 0, 161); */
+  color: white;
   transition: 0.3s;
-  /* background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(155, 0, 202)); */
 }
 li {
   padding: 10px 20px;
 }
 h1 {
-  font-family: Arial;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   font-style: bold;
-  font-size: 60px;
-  color: white;
+  font-size: 45px;
+  color:#005B59;
   margin-left: .50in;
-  padding-top:2.25in;
+  padding-top:3.1in;
+  padding-bottom: .50in;
   justify-content: left;
   align-items: center;
-  background: transparent;
-}
-.arrow_1 {
-  padding-left: .50in;
-  padding-bottom: .50in;
-  position:absolute;
-  background:transparent;
-  transition:.5s;
-}
-.arrow_1:hover {
-  position:absolute;
-  margin-top: .15in;
-  transition: all .5s ease-out;
-  animation: .5s 
-}
-.arrow_2 {
-  position:absolute;
-  padding-right: .50in;
-  padding-bottom: .50in;
-  padding-left:.50in;
-  background:transparent;
-  transition:.5s;
 }
 .arrow_2:hover {
   margin-top:.15in;
   transition: all .5s ease-out;
   animation: .5s;
 }
-em {
+/* em {
   color:yellow;
   font-style: normal;
   background:transparent;
-}
+} */
 .cover {
-  height:600px;
-  background-image:url("images/blob_1.svg");
   background-repeat:no-repeat;
   background-attachment:scroll;
-  background-position-x: 700px;
-  background-position-y: 0px;
-  margin-bottom: 200px; 
-
-  /* background-image:url("images/blob_bg.svg");
+  background-image: url("images/website_home_background.svg");
   background-repeat:no-repeat;
   background-position-x: 0px;
   background-position-y: 0px;
-  margin-bottom: 200px;  */
+  background-size: cover;
 }
 #about_me {
   display:flex;
-  margin-top: .60in;
-  margin-left: .50in;
-  margin-right: .50in;
+  margin-left: 2in;
+  margin-right: 2in;
   margin-bottom: 0in;
   position:relative;
-  /* background-image:url("images/blob_2.svg"); */
   background-repeat: no-repeat;
   background-attachment:unset;
   background-position-x: 1025px;
@@ -128,57 +93,52 @@ h3 {
   margin-top: 1in;
   margin-bottom:0;
   font-size: 30px;
-  font-family: arial;
+  font-family: 'Roboto Mono', monospace;
   background:transparent;
 }
 .portrait_icon {
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
   margin-top: 1.55in;
   margin-left: .50in;
   font-style:italic bold;
   background:transparent;
 }
+.button {
+  background-color: white; /* Green */
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: black; /* Green */
+  border-color: white;
+  color: white;
+}
 #section_2 {
   margin-bottom:2in;
 }
-.projects {
-  display:flex; 
-  margin-top: 1in;
-  margin-left: .50in;
-  margin-right: .50in;
-  margin-bottom: .25in;
-  position:relative;
-}
-.project_1 {
-  background-image: linear-gradient(to bottom right, rgb(60, 210, 255), rgb(0, 51, 146));;
-  border-radius: 10px;
-  margin-right: .25in;
-  padding: 15px;
-  box-shadow: 5px 10px 11px #1b1b1b ;
-}
-.project_2 {
-  background-image: linear-gradient(to bottom right, rgb(253, 11, 253), rgb(112, 0, 146));;
-  border-radius: 10px;
-  margin-left: .25in;
-  padding: 15px;
-  box-shadow: 5px 10px 11px #1b1b1b ;
-}
 h4 {
   background-color:transparent;
-  font-family: arial;
+  font-family: 'Roboto Mono', monospace;
   font-style: bold;
   font-size: 35px;
-  color: #ffffff;
+  color: #222222;
   margin-top: 10;
   margin-bottom: 5px;
 }
 p {
   background-color:transparent;
-  font-family: arial;
+  font-family: 'open-sans', sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  color: #222222;
   margin-bottom: 50px;
   background: transparent;
 }
