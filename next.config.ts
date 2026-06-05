@@ -1,17 +1,16 @@
 import type { NextConfig } from 'next';
 import createMDX from '@next/mdx';
-import postgres from 'postgres';
+// import postgres from 'postgres';
 
-export const sql = postgres(process.env.POSTGRES_URL!, {
-  ssl: 'allow'
-});
+// export const sql = postgres(process.env.POSTGRES_URL!, {
+//   ssl: 'allow'
+// });
 
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
     unoptimized: true
   },
-  basePath: './',
   pageExtensions: ['mdx', 'ts', 'tsx'],
 //   async redirects() {
 //     if (!process.env.POSTGRES_URL) {
