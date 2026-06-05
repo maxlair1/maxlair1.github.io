@@ -11,30 +11,30 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // basePath: './',
+  basePath: './',
   pageExtensions: ['mdx', 'ts', 'tsx'],
-  async redirects() {
-    if (!process.env.POSTGRES_URL) {
-      return [];
-    }
+//   async redirects() {
+//     if (!process.env.POSTGRES_URL) {
+//       return [];
+//     }
 
-    let redirects = await sql`
-      SELECT source, destination, permanent
-      FROM redirects;
-    `;
+//     let redirects = await sql`
+//       SELECT source, destination, permanent
+//       FROM redirects;
+//     `;
 
-    return redirects.map(({ source, destination, permanent }) => ({
-      source,
-      destination,
-      permanent: !!permanent
-    }));
-  },
-  // Note: Using the Rust compiler means we cannot use
-  // rehype or remark plugins. If you need them, remove
-  // the `experimental.mdxRs` flag.
-  experimental: {
-    mdxRs: { mdxType: 'gfm' }
-  }
+//     return redirects.map(({ source, destination, permanent }) => ({
+//       source,
+//       destination,
+//       permanent: !!permanent
+//     }));
+//   },
+//   // Note: Using the Rust compiler means we cannot use
+//   // rehype or remark plugins. If you need them, remove
+//   // the `experimental.mdxRs` flag.
+//   experimental: {
+//     mdxRs: { mdxType: 'gfm' }
+//   }
  };
 
 const withMDX = createMDX({});
