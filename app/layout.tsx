@@ -8,7 +8,7 @@ const dmsans = DM_Sans({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://next-mdx-blog.vercel.app'),
   alternates: {
-    canonical: '/'
+    canonical: './'
   },
   title: {
     default: 'Max Lair',

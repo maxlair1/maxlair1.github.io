@@ -3,7 +3,7 @@ import path from 'path';
 
 export const dynamic = "force-static"
 
-const SITE_URL = 'https://next-mdx-blog.vercel.app';
+const SITE_URL = 'https://maxlair1.github.io';
 
 async function getNoteSlugs(dir: string): Promise<string[]> {
   const slugs: string[] = [];
