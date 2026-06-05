@@ -5,21 +5,24 @@ export const dynamic = "force-static"
 
 const SITE_URL = 'https://next-mdx-blog.vercel.app';
 
-async function getNoteSlugs(dir: string) {
-  const entries = await fs.readdir(dir, {
-    recursive: true,
-    withFileTypes: true
-  });
-  return entries
-    .filter((entry) => entry.isFile() && entry.name === 'page.mdx')
-    .map((entry) => {
-      const relativePath = path.relative(
-        dir,
-        path.join(entry.parentPath, entry.name)
-      );
-      return path.dirname(relativePath);
-    })
-    .map((slug) => slug.replace(/\\/g, '/'));
+async function getNoteSlugs(dir: string): Promise<string[]> {
+  const slugs: string[] = [];
+
+  async function walk(current: string) {
+    const entries = await fs.readdir(current, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(current, entry.name);
+      if (entry.isDirectory()) {
+        await walk(fullPath);
+      } else if (entry.isFile() && entry.name === 'page.mdx') {
+        const slug = path.relative(dir, path.dirname(fullPath));
+        slugs.push(slug.replace(/\\/g, '/'));
+      }
+    }
+  }
+
+  await walk(dir);
+  return slugs;
 }
 
 export default async function sitemap() {
