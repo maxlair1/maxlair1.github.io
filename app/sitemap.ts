@@ -1,6 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
+export const dynamic = "force-static"
+
 const SITE_URL = 'https://next-mdx-blog.vercel.app';
 
 async function getNoteSlugs(dir: string) {
