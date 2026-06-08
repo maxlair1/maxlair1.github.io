@@ -1,10 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Google_Sans_Code } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
-const googlesanscode = Google_Sans_Code({ weight: ['300']});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://maxlair1.github.io'),
@@ -24,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${googlesanscode.className}${inter.className} dark:bg-taupe-950`}>
+    <html lang="en" className={`${inter.className} dark:bg-taupe-950`}>
       <body className="antialiased">
         <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 dark:bg-taupe-950 bg-white text-taupe-1200 dark:text-taupe-300">
           <main className="max-w-[60ch] mx-auto w-full space-y-6 mt-20">
