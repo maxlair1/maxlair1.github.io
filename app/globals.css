@@ -1,18 +1,16 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-family-sans: 'DM Sans', sans-serif;
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-mono: 'DM Mono', monospace;
 }
 
 :root {
-  --sh-class: #7aa2f7;
-  --sh-sign: #89ddff;
-  --sh-string: #9ece6a;
-  --sh-keyword: #bb9af7;
-  --sh-comment: #565f89;
-  --sh-jsxliterals: #7aa2f7;
-  --sh-property: #73daca;
-  --sh-entity: #e0af68;
+ letter-spacing: 0;
+}
+
+.spacer {
+  height: 5rem;
 }
 
 html {

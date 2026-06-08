@@ -11,33 +11,32 @@ type BlockquoteProps = ComponentPropsWithoutRef<'blockquote'>;
 
 const components = {
   h1: (props: HeadingProps) => (
-    <h1 className="font-medium pt-12 mb-0" {...props} />
+    <h1 className="font-medium text-md mb-5 dark:text-taupe-100" {...props} />
   ),
   h2: (props: HeadingProps) => (
     <h2
-      className="text-gray-800 dark:text-zinc-200 font-medium mt-8 mb-3"
+      className="text-taupe-200 dark:text-taupe-550 font-semibold mt-8 mb-3"
       {...props}
     />
   ),
   h3: (props: HeadingProps) => (
     <h3
-      className="text-gray-800 dark:text-zinc-200 font-medium mt-8 mb-3"
+      className="text-taupe-800 dark:text-taupe-200 font-medium mt-8 mb-3"
       {...props}
     />
   ),
-  h4: (props: HeadingProps) => <h4 className="font-medium" {...props} />,
   p: (props: ParagraphProps) => (
-    <p className="text-gray-800 dark:text-zinc-300 leading-snug" {...props} />
+    <p className="text-taupe-500 dark:text-taupe-400 font-normal" {...props} />
   ),
   ol: (props: ListProps) => (
     <ol
-      className="text-gray-800 dark:text-zinc-300 list-decimal pl-5 space-y-2"
+      className="text-taupe-800 dark:text-taupe-300 list-decimal pl-5 space-y-2"
       {...props}
     />
   ),
   ul: (props: ListProps) => (
     <ul
-      className="text-gray-800 dark:text-zinc-300 list-disc pl-5 space-y-1"
+      className="text-taupe-800 dark:text-taupe-300 list-disc pl-5 space-y-1"
       {...props}
     />
   ),
@@ -50,7 +49,7 @@ const components = {
   ),
   a: ({ href, children, ...props }: AnchorProps) => {
     const className =
-      'text-blue-500 hover:text-blue-700 dark:text-gray-400 hover:dark:text-gray-300 dark:underline dark:underline-offset-2 dark:decoration-gray-800';
+      'text-taupe-500 hover:text-taupe-700 dark:text-taupe-400 hover:dark:text-taupe-300 dark:underline dark:underline-offset-2 dark:decoration-taupe-700';
     if (href?.startsWith('/')) {
       return (
         <Link href={href} className={className} {...props}>
@@ -103,7 +102,7 @@ const components = {
   ),
   blockquote: (props: BlockquoteProps) => (
     <blockquote
-      className="ml-[0.075em] border-l-3 border-gray-300 pl-4 text-gray-700 dark:border-zinc-600 dark:text-zinc-300"
+      className="ml-[0.075em] border-l-3 border-taupe-300 pl-4 text-taupe-700 dark:border-taupe-600 dark:text-taupe-300"
       {...props}
     />
   ),
