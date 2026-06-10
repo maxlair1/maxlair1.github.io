@@ -1,27 +1,37 @@
 import { Card } from './components/card.tsx'
 import { Frame } from './components/frame.tsx'
-import { IconSketching } from '@tabler/icons-react';
+import { CoffeeIcon } from './components/icons'
+import { Button } from './components/button'
 
 <header>
     <span className="font-medium text-taupe-950 dark:text-taupe-100">Max Lair</span>
     <br/>
     <span className="flex gap-1.5  text-taupe-600 dark:text-taupe-400 font-mono text-xs">
-        <IconSketching stroke={1.5} size={14} />
+        <CoffeeIcon stroke={1.5} size={14} weight="duotone" />
         <p>Web Designer</p>
     </span>
 </header>
 
-Systems-driven product designer and web developer who loves building software humans use. Design systems enthusiast, Product Designer, and Software Engineer from Dayton, OH. Currently lead product designer and shareholder at HeartFitt. Founder of NoCollide game studio, which is actively developing our indie title, On the Line.
+Versitile, code-efficient web designer. I particularly enjoy design systems, tokens, micro-interactions, agent-wrangling, and utilizing recursive design techniques. From Dayton, OH. Currently working on the lovely design team at [ReyRey](https://reyrey.com).
+{/* Systems-driven product designer and web developer who loves building software humans use. Design systems enthusiast, Product Designer, and Software Engineer from Dayton, OH. Currently lead product designer and shareholder at HeartFitt. Founder of NoCollide game studio, which is actively developing our indie title, On the Line. */}
 
 <div className="spacer"/>
 
-[Some links apple](n/1)
+# Links
+[UX Design Portfolio](https://maxlair.com)
+
+<div className="spacer"/>
+
 
 # G'day 👋
 
 <Card href="n/1" title="My first post" subtitle="Learn a little more about me"/>
 
-<Frame caption="This is a thing">Test</Frame>
+<Frame caption="This is a thing">
+    {/* Demo */}
+    <Button leading={<CoffeeIcon size={32} weight="duotone" />
+    }>Test</Button>
+</Frame>
 
 <br />
 

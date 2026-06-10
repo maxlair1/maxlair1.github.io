@@ -1,8 +1,5 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
-
-@custom-variant dark (&:is(.dark *));
 
 @theme {
   --font-family-sans: 'Inter', sans-serif;
@@ -48,9 +45,11 @@
   height: 5rem;
 }
 
-html {
+html,
+body {
   min-width: 360px;
-  scrollbar-gutter: stable;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -146,6 +145,8 @@ table {
 }
 
 @theme inline {
+  --ease-std: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);

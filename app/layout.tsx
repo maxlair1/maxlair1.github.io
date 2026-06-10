@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import { OS } from './components/os';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,15 +25,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} dark:bg-taupe-950`}>
-      <body className="antialiased">
-        <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 dark:bg-taupe-950 bg-white text-taupe-1200 dark:text-taupe-300">
-          <main className="max-w-[60ch] mx-auto w-full space-y-6 mt-20">
-            {children}
-          </main>
-          <Footer />
-          <Analytics />
-        </div>
-      </body>
+        <body className="antialiased">
+        <OS>
+          <div className="min-h-full flex flex-col justify-between pt-0 md:pt-8 p-8 dark:bg-taupe-950 bg-white text-taupe-1200 dark:text-taupe-300">
+            <main className="max-w-[60ch] mx-auto w-full space-y-6 mt-20">
+              {children}
+            </main>
+            <Footer />
+            <Analytics />
+          </div>
+        </OS>
+        </body>
     </html>
   );
 }
