@@ -10,11 +10,11 @@ export function OS({children}: osProps) {
     const [hovering, setHovering] = React.useState<boolean>();
 
     return (
-        <div className='relative py-2 pr-2 pl-8 h-screen bg-taupe-950'>
+        <div className='relative py-1 pr-1 pl-8 h-screen bg-black'>
             <div
                 className={clsx(
-                    hovering ? 'w-70 bg-muted/5' : 'w-8',
-                    'group absolute inset-y-2 text-card left-0 z-10 flex flex-col justify-center items-center rounded-r-lg transition-all ease-bounce'
+                    hovering ? 'w-70 bg-black border-muted/50' : 'w-8',
+                    'group absolute inset-y-1 left-0 z-10 flex flex-col justify-center items-center transition-all ease-bounce duration-300'
                 )}
                 onMouseOver={() => setHovering(true)}
                 onMouseLeave={() => setHovering(false)}
@@ -22,15 +22,21 @@ export function OS({children}: osProps) {
                 {/* Grip */}
                 <div 
                 className={clsx(
-                    hovering ? 'opacity-0 pointer-none:' : 'opacity-100',
-                    'w-1 h-8 bg-taupe-500/50 rounded-full'
+                    hovering ? 'opacity-0 pointer-none select-none' : 'opacity-100',
+                    'w-1 h-8 bg-muted rounded-full'
                 )}
                 aria-hidden></div>
 
                 {hovering && <Menu/>}
             </div>
-            <div className='h-full flex flex-col rounded-lg overflow-hidden bg-black'>
+            <div className='h-full relative flex flex-col rounded-lg overflow-hidden bg-black'>
                 <div className='flex-1 min-h-0 overflow-y-auto'>
+                    {hovering && 
+                    <div aria-hidden className={clsx(
+                        'absolute top-0 left-0 right-0 bottom-0 pointer-none select-none bg-black/25 transition-std ease-bounce duration-200',
+                        hovering ? 'opacity-100' : 'opacity-0'
+                    )}/>
+                    }
                     {children}
                 </div>
             </div>

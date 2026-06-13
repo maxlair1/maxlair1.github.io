@@ -11,17 +11,14 @@ type BlockquoteProps = ComponentPropsWithoutRef<'blockquote'>;
 
 const components = {
   h1: (props: HeadingProps) => (
-    <h1 className="font-medium text-md mb-5 dark:text-taupe-100" {...props} />
+    <h1 className="font-semibold text-md mb-5 text-orange-700" {...props} />
   ),
   h2: (props: HeadingProps) => (
-    <h2
-      className="text-taupe-200 dark:text-taupe-550 font-semibold mt-8 mb-3"
-      {...props}
-    />
+    <h2 className="font-medium text-md mb-5 text-foreground" {...props} />
   ),
   h3: (props: HeadingProps) => (
     <h3
-      className="text-taupe-800 dark:text-taupe-200 font-medium mt-8 mb-3"
+      className="font-medium text-muted-foreground text-xs mb-4 font-mono uppercase mt-8"
       {...props}
     />
   ),
@@ -49,7 +46,7 @@ const components = {
   ),
   a: ({ href, children, ...props }: AnchorProps) => {
     const className =
-      'text-taupe-500 hover:text-taupe-700 dark:text-taupe-400 hover:dark:text-taupe-300 dark:underline dark:underline-offset-2 dark:decoration-taupe-700';
+      'text-accent-foreground/75 hover:text-accent-foreground underline underline-offset-2 dark:decoration-taupe-700';
     if (href?.startsWith('/')) {
       return (
         <Link href={href} className={className} {...props}>

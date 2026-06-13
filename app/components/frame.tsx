@@ -8,7 +8,7 @@ interface FrameProps {
 export function Frame({children, caption}: FrameProps) {
     return (
         <figure className=''>
-            <div className="mobile-full-width relative mb-8.75 mt-8 rounded-xl border border-taupe-200 dark:border-taupe-800/50 bg-taupe dark:bg-taupe-900/30 sm:shadow-sm sm:dark:shadow-inset-border">
+            <div className="mobile-full-width relative mb-8.75 mt-8 rounded-xl border border-border bg-card sm:shadow-sm sm:dark:shadow-inset-border">
                 <div className="flex w-full px-4 py-6 sm:rounded-xl light h-72 items-center justify-center">
                     {children}
                 </div>
