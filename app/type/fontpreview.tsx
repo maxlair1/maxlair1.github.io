@@ -38,8 +38,13 @@ export default function FontPreview({ font, source, href }: FontPreviewProps) {
   }, [source, font])
 
   return (
-    <a className='text-accent-foreground/75 hover:text-accent-foreground underline underline-offset-2 dark:decoration-taupe-700' style={{ fontFamily: `'${font}', sans-serif`, opacity: loaded ? 1 : 0 }} href={href}>
-      Grumpy wizards make toxic brew for the evil queen
-    </a>
+    <div className='truncate'>
+      <h3 className="font-medium text-muted-foreground text-xs mb-1 font-mono uppercase mt-8">
+          {font}
+      </h3>
+      <a className='text-accent-foreground/75 hover:text-accent-foreground underline underline-offset-2 dark:decoration-taupe-700 truncate' style={{ fontFamily: `'${font}', sans-serif`, opacity: loaded ? 1 : 0 }} href={href}>
+        Grumpy wizards make toxic brew for the evil queen
+      </a>
+    </div>
   )
 }
