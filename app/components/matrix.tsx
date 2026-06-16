@@ -110,7 +110,7 @@ export default function MatrixAnimation({
                     <div key={i} className="relative" style={{width: cell, height: cell}} aria-hidden>
                         {GlowCube(glowing.has(i))}
                         <div
-                            className="w-0.5 h-0.5 rounded-full bg-gray-500/50"
+                            className="w-0.5 h-0.5 rounded-full bg-gray-500/20"
                             style={{
                                 position: 'absolute',
                                 top: '50%',
