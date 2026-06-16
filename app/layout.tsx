@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import VaulDrawer from './components/drawer';
 import { OS } from './components/os';
 import clsx from 'clsx';
 
@@ -27,15 +28,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
         <body className="antialiased">
-        <OS>
+        <div>
           <div className="bg-background text-foreground w-full min-h-full flex flex-col justify-between pt-0 md:pt-8 p-8">
+            {/* <VaulDrawer></VaulDrawer> */}
             <main className="max-w-[60ch] mx-auto w-full space-y-6 mt-20">
               {children}
             </main>
             <Footer />
             <Analytics />
           </div>
-        </OS>
+        </div>
         </body>
     </html>
   );

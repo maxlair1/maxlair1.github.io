@@ -245,8 +245,7 @@
 html,
 body {
   min-width: 360px;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;
 }
 
 body {
