@@ -1,4 +1,3 @@
 'use client';
 
-export { ArrowLeftIcon } from '@phosphor-icons/react';
-export { CoffeeIcon } from '@phosphor-icons/react';
+export *  from '@phosphor-icons/react'
