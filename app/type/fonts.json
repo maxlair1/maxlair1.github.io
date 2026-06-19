@@ -75,14 +75,14 @@
     "source": "https://cdn.jsdelivr.net/gh/maxlair1/open-typefaces@v1.5.0/fonts/beast/beast.css"
   },
   {
-    "font": "Averia",
-    "href": "https://fontlibrary.org/en/font/averia",
-    "source": "https://fontlibrary.org/en/face/averia"
+    "font": "Averia Serif Libre",
+    "href": "http://iotic.com/averia/",
+    "source": "https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap"
   },
   {
-    "font": "Code New Roman",
+    "font": "CodeNewRomanRegular",
     "href": "https://fontlibrary.org/en/font/code-new-roman",
-    "source": "https://fontlibrary.org/en/face/code-new-roman"
+    "source": "https://fontlibrary.org//face/code-new-roman"
   },
   {
     "font": "Isenheim",

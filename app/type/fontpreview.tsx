@@ -13,7 +13,7 @@ export default function FontPreview({ font, source, href }: FontPreviewProps) {
   useEffect(() => {
     const id = `font-${font.replace(/\s+/g, '-').toLowerCase()}`
     if (document.getElementById(id)) {
-      document.fonts.load(`16px '${font}'`).then(() => setLoaded(true))
+      document.fonts.load(`16px '${font}'`).then(() => setLoaded(true)).catch(() => {})
       return
     }
 
@@ -24,7 +24,7 @@ export default function FontPreview({ font, source, href }: FontPreviewProps) {
       link.id = id
       link.rel = 'stylesheet'
       link.href = source
-      link.onload = () => document.fonts.load(`16px '${font}'`).then(() => setLoaded(true))
+      link.onload = () => document.fonts.load(`16px '${font}'`).then(() => setLoaded(true)).catch(() => {})
       document.head.appendChild(link)
     } else {
       // local file or direct .woff2/.ttf URL — inject @font-face
@@ -33,7 +33,7 @@ export default function FontPreview({ font, source, href }: FontPreviewProps) {
       const format = source.endsWith('.ttf') ? 'truetype' : 'woff2'
       style.textContent = `@font-face { font-family: '${font}'; src: url('${source}') format('${format}'); font-display: swap; }`
       document.head.appendChild(style)
-      document.fonts.load(`16px '${font}'`).then(() => setLoaded(true))
+      document.fonts.load(`16px '${font}'`).then(() => setLoaded(true)).catch(() => {})
     }
   }, [source, font])
 
