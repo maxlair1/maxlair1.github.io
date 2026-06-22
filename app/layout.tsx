@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Logo } from './components/icons'
 import { Analytics } from '@vercel/analytics/react';
 import VaulDrawer from './components/drawer';
 import { OS } from './components/os';
@@ -52,13 +53,14 @@ function Footer() {
   return (
     <footer className="mt-12 text-center">
       <div className="flex justify-center space-x-4">
+        <Logo className='text-xl'/>
         {links.map((link) => (
           <a
             key={link.name}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className='text-taupe-500 hover:text-taupe-700 dark:text-taupe-400 hover:dark:text-taupe-300 dark:underline dark:underline-offset-2 dark:decoration-taupe-700'
+            className='text-muted-foreground hover:text-foreground underline decoration-muted-foreground/50 underline-offset-2'
           >
             {link.name}
           </a>

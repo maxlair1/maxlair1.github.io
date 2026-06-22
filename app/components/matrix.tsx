@@ -80,7 +80,7 @@ export default function MatrixAnimation({
 
     const GlowCube = (
         glowing: boolean = false,
-        colorRGB: string = '16,256,120'
+        colorRGB: string = '255,127,80'
     ) => {
         return (
             <div
